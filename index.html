@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Styrcula | Cybersecurity Professional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield" id="starfield"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><span class="terminal-bracket">[</span> Brian Styrcula <span class="terminal-bracket">]</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Welcome! My name is Brian Styrcula</h1>
+                <p>Cybersecurity Graduate Student | Hands-On Learner | Problem Solver</p>
+                <div class="scroll-hint">
+                    <span class="scroll-hint-text">scroll or press ↓ to explore</span>
+                    <div class="scroll-arrow">&#8595;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="about-text">
+                Cybersecurity graduate student with hands-on experience in vulnerability management, cloud security, and security operations. Currently interning at Sacred Heart University while running a home lab and IT business.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🛡️ Security Tools</h3>
+                    <ul>
+                        <li>Nessus</li>
+                        <li>Wireshark</li>
+                        <li>Ettercap</li>
+                        <li>Nmap</li>
+                        <li>FTK Imager</li>
+                        <li>Google SecOps (SIEM/SOAR)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>☁️ Cloud & Infrastructure</h3>
+                    <ul>
+                        <li>GCP (Cloud Run, Load Balancing, IAP)</li>
+                        <li>AWS EC2</li>
+                        <li>OpenTofu/Terraform</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>Proxmox VE</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>🌐 Networking</h3>
+                    <ul>
+                        <li>TCP/IP & OSI Model</li>
+                        <li>VPN (WireGuard, Tailscale)</li>
+                        <li>Firewall Configuration</li>
+                        <li>DNS & ARP</li>
+                        <li>Packet Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>💻 Systems</h3>
+                    <ul>
+                        <li>Windows Server 2022</li>
+                        <li>Active Directory</li>
+                        <li>Linux (Arch, Kali)</li>
+                        <li>Bash & SSH</li>
+                        <li>VMware & VirtualBox</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card clickable-card">
+                    <h3>GCP Cloud Infrastructure</h3>
+                    <p class="project-tech">OpenTofu • GCP • Cloud Run • SSL/TLS</p>
+                    <span class="card-hint">Click for details</span>
+                    <ul class="card-details">
+                        <li><strong>HTTPS Load Balancer & IAP</strong> deployed on GCP with OpenTofu</li>
+                        <li><strong>Cloud Run</strong> hosting with SSL and custom domain</li>
+                    </ul>
+                </div>
+                <div class="project-card clickable-card">
+                    <h3>Vulnerability Scanning Lab</h3>
+                    <p class="project-tech">Nessus • Wireshark • Ettercap • VMware</p>
+                    <span class="card-hint">Click for details</span>
+                    <ul class="card-details">
+                        <li>Built an isolated <strong>5-VM network</strong> in <strong>VMware</strong> for penetration testing</li>
+                        <li>Ran <strong>Nessus credentialed vulnerability scans</strong> across all 5 VMs</li>
+                        <li>Intercepted live credentials using <strong>ARP poisoning with Ettercap</strong></li>
+                        <li><strong>Captured plaintext FTP logins</strong> through <strong>Wireshark</strong> traffic analysis </li>
+                    </ul>
+                </div>
+                <div class="project-card clickable-card">
+                    <h3>Proxmox Home Lab</h3>
+                    <p class="project-tech">Proxmox VE • Active Directory • Tailscale • Linux</p>
+                    <span class="card-hint">Click for details</span>
+                    <ul class="card-details">
+                        <li><strong>Bare-metal Proxmox VE</strong> on dedicated hardware</li>
+                        <li><strong>Windows Server 2022</strong> domain controller (brian.local)</li>
+                        <li><strong>Arch Linux</strong> pentesting node with Tailscale remote access</li>
+                    </ul>
+                </div>
+                <div class="project-card clickable-card">
+                    <h3>Digital Forensics (CY-635)</h3>
+                    <p class="project-tech">FTK Imager • Karen's Hasher • Exterro Registry Viewer • DiskExplorer</p>
+                    <span class="card-hint">Click for details</span>
+                    <ul class="card-details">
+                        <li>Created <strong>forensic disk images</strong> using FTK Imager</li>
+                        <li>Verified <strong>data integrity</strong> with hashing tools (Karen's Hasher)</li>
+                        <li>Analyzed <strong>Windows registry artifacts</strong> with Exterro Registry Viewer</li>
+                        <li>Examined <strong>FAT file systems</strong> and recovered data with DiskExplorer</li>
+                    </ul>
+                </div>
+                <div class="project-card clickable-card">
+                    <h3>Network Security I (CY-622)</h3>
+                    <p class="project-tech">WireGuard • Docker • Kubernetes • AWS EC2 • Wireshark</p>
+                    <span class="card-hint">Click for details</span>
+                    <ul class="card-details">
+                        <li>Built and tested <strong>encrypted VPN tunnels</strong> using WireGuard</li>
+                        <li>Deployed containerized environments with <strong>Docker and Kubernetes</strong> (Minikube)</li>
+                        <li>Set up <strong>Apache2 web servers</strong> and MySQL databases on AWS EC2 via SSH</li>
+                        <li>Performed <strong>packet analysis</strong> with Wireshark and configured firewall rules</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content clickable-card">
+                        <h3>Cybersecurity Intern</h3>
+                        <p class="experience-date">February 2025 – Present</p>
+                        <p class="experience-company">Sacred Heart University, Fairfield, CT</p>
+                        <span class="card-hint">Click for details</span>
+                        <ul class="card-details">
+                            <li><strong>Google SecOps (SIEM/SOAR)</strong> deployment support</li>
+                            <li><strong>Playbook automation</strong> research for incident response workflows</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content clickable-card">
+                        <h3>Audio/Visual Graduate Assistant</h3>
+                        <p class="experience-date">September 2024 – Present</p>
+                        <p class="experience-company">Sacred Heart University, Fairfield, CT</p>
+                        <span class="card-hint">Click for details</span>
+                        <ul class="card-details">
+                            <li><strong>Crestron A/V systems</strong> support across campus</li>
+                            <li><strong>Tier-1 support</strong> for Windows/macOS across 100+ classrooms</li>
+                            <li><strong>IT request management</strong> via TeamDynamix (TDX)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content clickable-card">
+                        <h3>Owner / Sole Proprietor</h3>
+                        <p class="experience-date">August 2024 – Present</p>
+                        <p class="experience-company">Brian's Quick Fix, Fairfield, CT</p>
+                        <span class="card-hint">Click for details</span>
+                        <ul class="card-details">
+                            <li><strong>In-home IT support</strong> for dozens of recurring clients</li>
+                            <li><strong>Router, Wi-Fi & network security</strong> configuration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>M.S. Cybersecurity</h3>
+                    <p class="education-school">Sacred Heart University</p>
+                    <p class="education-date">Expected May 2027 | GPA: 3.73</p>
+                    <ul class="education-list">
+                        <li>Digital forensics</li>
+                        <li>Network security</li>
+                        <li>Vulnerability management</li>
+                        <li>Cloud security</li>
+                    </ul>
+                </div>
+                <div class="education-card">
+                    <h3>B.A. Telecommunications & Media Industries</h3>
+                    <p class="education-school">The Pennsylvania State University</p>
+                    <p class="education-date">May 2024</p>
+                    <ul class="education-list">
+                        <li>Minor: Entrepreneurship & Innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p><a href="mailto:brian.styrcula@gmail.com">brian.styrcula@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Brian Styrcula. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Card Modal -->
+    <div id="card-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="card-modal-close">&times;</span>
+            <h2 id="card-modal-title"></h2>
+            <p id="card-modal-subtitle" class="modal-subtitle"></p>
+            <div class="modal-body" id="card-modal-body"></div>
+        </div>
+    </div>
+
+    <script>
+        // Generate starfield
+        function createStarfield() {
+            const starfield = document.getElementById('starfield');
+            const starCount = 150;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                starfield.appendChild(star);
+            }
+        }
+
+        // Scroll animation trigger
+        function setupScrollAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.skill-card, .project-card, .education-card, .timeline-content, .stat').forEach(el => {
+                el.classList.add('fade-in');
+                observer.observe(el);
+            });
+        }
+
+        // Card modal
+        function setupCardModals() {
+            const cards = document.querySelectorAll('.clickable-card');
+            const modal = document.getElementById('card-modal');
+            const closeBtn = document.getElementById('card-modal-close');
+            const modalTitle = document.getElementById('card-modal-title');
+            const modalSubtitle = document.getElementById('card-modal-subtitle');
+            const modalBody = document.getElementById('card-modal-body');
+
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    // Title
+                    modalTitle.textContent = card.querySelector('h3').textContent;
+
+                    // Subtitle: tech tag, date+company, or school+date
+                    const tech = card.querySelector('.project-tech');
+                    const date = card.querySelector('.experience-date, .education-date');
+                    const company = card.querySelector('.experience-company, .education-school');
+                    let subtitle = '';
+                    if (tech) subtitle = tech.textContent;
+                    else if (company && date) subtitle = company.textContent + ' · ' + date.textContent;
+                    else if (date) subtitle = date.textContent;
+                    modalSubtitle.textContent = subtitle;
+
+                    // Bullet list
+                    const list = card.querySelector('.card-details');
+                    modalBody.innerHTML = list ? list.outerHTML : '';
+
+                    modal.classList.add('show');
+                });
+            });
+
+            closeBtn.addEventListener('click', () => modal.classList.remove('show'));
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.classList.remove('show');
+            });
+        }
+
+        // Arrow key scrolls one full section at a time
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+                e.preventDefault();
+                window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+            } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+                e.preventDefault();
+                window.scrollBy({ top: -window.innerHeight, behavior: 'smooth' });
+            }
+        });
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            createStarfield();
+            setupScrollAnimations();
+            setupCardModals();
+        });
+    </script>
+</body>
+</html>
